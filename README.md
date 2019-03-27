@@ -1,2 +1,8 @@
-# Simple-Random-Sampling-Oil-Palm-Conservation-Program
-Identifying the minimum sample size that will capture at least 90% of genetic variation
+# Oil-Palm-Genetic-Diversity-and-Conservation-Program
+
+
+
+### Principle Components Analysis
+I implemented a PCA to understand genetic structure.
+
+
