@@ -10,18 +10,17 @@ This PCA looks for clusters of oil palm samples that share a high degree of gene
 
 <img src="Figures_Scripts/PCA.png" width="600" height="500">
 
-### Bootstrap Simulation Method: Simple random sampling to identify minimal sample size to capture 90% of genetic variation
+### Simulation Method: Simple random sampling to identify minimal sample size to capture 90% of total genetic variation
 Conservation of wild genetic material is important to ensure long-term availability for future exploitation but maintaining genetic resources of wild oil palm samples are costly and requires large land resources. Simulations were carried out to define an optimal sample size to reduce genetic redundancy while maximizing genetic diversity of wild oil palm conservation collections. 
 
   - Population genetic diversity estimates indicate that African oil palm species (green) is genetically more diverse than Latin American species (orange). Latin American palms are highly inbred, which translates to a high degree of genetic redundancy. Consequently, it is unneccessary to maintain the full collection of Latin American palms (N=150).
 
     <img src="Figures_Scripts/GeneticDiversity_Boxplot.png" width="500" height="400">
 
-  - A bootstrapping method was used to determine the minimal sample size to capture at least 90% of total genetic variation observed in 150 wild American oil palm samples. A simulation was employed to randomly draw N individuals across different sample sizes (N=5 to 150 palms in increments of 5) from the entire American oil palms. For each sample size, the average fraction of genomic variant sites (number of genomic variant sites/total number of sites) across 100 bootstrapped simulations was calculated as a measure of genetic diversity captured (using a custom python script: bootstrap_simulation.py). A genetic diversity index was calculated by taking the ratio of this diversity to the total genetic diversity in the full set of 150 palms (mean fraction of genomic variant sites of size N/total fraction of genomic variant sites N=150). 
+  - **METHOD** A simulation was used to determine the minimal sample size to capture at least 90% of total genetic variation observed in 150 wild American oil palm samples. A simulation was employed to randomly draw N individuals across different sample sizes (N=5 to 150 palms in increments of 5) from the entire American oil palms. For each sample size, the average fraction of genomic variant sites (number of genomic variant sites/total number of sites) across 100 simulations was calculated as a measure of genetic diversity captured (using a custom python script: simulation.py). A genetic diversity index was calculated by taking the ratio of diversity of each sample size and the total genetic diversity in the full set of 150 palms (mean fraction of genomic variant sites of sample size N / total fraction of genomic variant sites of total sample size N=150). 
   
   - **RESULTS**: Sampling 80 palms (out of 154) will likely capture at least 90% of total genetic diversity observed in the wild Latin American population. The nonlinear regression formula estimated here is y = 1.128 + x/(19.04 + x).
 
     <img src="Figures_Scripts/SamplingSize_GeneticDiversityIndex.png" width="550" height="400">
-
 
 ### Bayesian Method to Identifying Patterns of Natural Selection
