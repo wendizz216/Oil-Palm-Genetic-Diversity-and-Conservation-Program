@@ -19,8 +19,9 @@ Conservation of wild genetic material is important to ensure long-term availabil
 
   - A bootstrapping method was used to determine the minimal sample size to capture at least 90% of total genetic variation observed in 150 wild American oil palm samples. A simulation was employed to randomly draw N individuals across different sample sizes (N=5 to 150 palms in increments of 5) from the entire American oil palms. For each sample size, the average fraction of genomic variant sites (number of genomic variant sites/total number of sites) across 100 bootstrapped simulations was calculated as a measure of genetic diversity captured (using a custom python script: bootstrap_simulation.py). A genetic diversity index was calculated by taking the ratio of this diversity to the total genetic diversity in the full set of 150 palms (mean fraction of genomic variant sites of size N/total fraction of genomic variant sites N=150). 
   
-  - **RESULTS**: Sampling 80 palms (out of 154) will likely capture at least 90% of total genetic diversity observed in the wild Latin American population.
+  - **RESULTS**: Sampling 80 palms (out of 154) will likely capture at least 90% of total genetic diversity observed in the wild Latin American population. The nonlinear regression formula estimated here is y = 1.128 + x/(19.04 + x).
 
     <img src="Figures_Scripts/SamplingSize_GeneticDiversityIndex.png" width="550" height="400">
+
 
 ### Bayesian Method to Identifying Patterns of Natural Selection
