@@ -1,5 +1,7 @@
 # Wild-Oil-Palm-Genetic-Diversity-and-Conservation-Program
 
+The purpose of this study is to exploit high dimensional genomic sequence data to evaluate the genetic diversity, geographic groupings and relatedness of wild oil palm important for the future improvement of current cultivated varieties.
+
 ### Genomic variants
 The oil palm genome consists of 1.8 billion copies of four base molecules (A,T,G,C) arranged in pairs along the DNA. These sequences of "base pairs" define genomic sequences that code for genes responsible for the expression of specific traits/characteristics (e.g., height, number of fruits produced, disease resistance, fruit size etc.). Despite the massive size of the genome, there is remarkably little variation among oil palm samples. Instead of working with the full length of genomic sequences, we take advantage of the small variation among palms and only store the difference between the genomes of each palm. These differences are considered genomic variants that arise from either a single mutations (e.g., single nucleotide polymorphisms, SNPs) or insertions/deletions (e.g., indels) along the genomic sequence.
 
@@ -8,11 +10,17 @@ The oil palm genome consists of 1.8 billion copies of four base molecules (A,T,G
 ### Principle Components Analysis
 This PCA looks for clusters of oil palm samples that share a high degree of genetic similarities by projecting the high-dimensional genome-wide variant data into two dimensions that explain the variation (PC1 and PC2, accounting for 76% of genetic variation). The PCA reveals clusters of oil palm samples corresponding to African and Latin American species of oil palm as well as geographic origin of 653 oil palm samples across 70,100 genomic variants. 
 
+**Scripts**:
+[PCA.R](Oil-Palm-Genetic-Diversity-and-Conservation-Program/Principle_Components_Analysis/PCA.R) & [PCA_transformData.py](Oil-Palm-Genetic-Diversity-and-Conservation-Program/Principle_Components_Analysis/PCA_transformData.py)
+
 <img src="Figures_Scripts/PCA.png" width="600" height="500">
+
 
 ### Simulation Method: Simple random sampling to identify minimal sample size to capture 90% of total genetic variation
 Conservation of wild genetic material is important to ensure long-term availability for future exploitation but maintaining genetic resources of wild oil palm samples are costly and requires large land resources. Simulations were carried out to define an optimal sample size to reduce genetic redundancy while maximizing genetic diversity of wild oil palm conservation collections. 
 
+**Scripts**: [simulation.py](Oil-Palm-Genetic-Diversity-and-Conservation-Program/Simulations/simulation.py) & [Fitting_regression_curve.R](Oil-Palm-Genetic-Diversity-and-Conservation-Program/Simulations/Fitting_regression_curve.R)
+  
   - Population genetic diversity estimates indicate that African oil palm species (green) is genetically more diverse than Latin American species (orange). Latin American palms are highly inbred, which translates to a high degree of genetic redundancy. Consequently, it is unneccessary to maintain the full collection of Latin American palms (N=150).
 
     <img src="Figures_Scripts/GeneticDiversity_Boxplot.png" width="500" height="400">
@@ -23,4 +31,8 @@ Conservation of wild genetic material is important to ensure long-term availabil
 
     <img src="Figures_Scripts/SamplingSize_GeneticDiversityIndex.png" width="550" height="400">
 
+### Hierarchical clustering analysis: 
+
 ### Bayesian Method to Identifying Patterns of Natural Selection
+
+
