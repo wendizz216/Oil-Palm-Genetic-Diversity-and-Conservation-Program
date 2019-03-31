@@ -19,7 +19,7 @@ This PCA looks for clusters of oil palm samples that share a high degree of gene
 ### Simulation Method: Simple random sampling to identify minimal sample size to capture 90% of total genetic variation
 Conservation of wild genetic material is important to ensure long-term availability for future exploitation but maintaining genetic resources of wild oil palm samples are costly and requires large land resources. Simulations were carried out to define an optimal sample size to reduce genetic redundancy while maximizing genetic diversity of wild oil palm conservation collections. 
 
-**Scripts**: [simulation.py](simulations/simulation.py) & [Fitting_regression_curve.R](simulations/Fitting_regression_curve.R)
+**Scripts**: [simulation.py](Simulations/simulation.py) & [Fitting_regression_curve.R](Simulations/Fitting_regression_curve.R)
   
   - Population genetic diversity estimates indicate that African oil palm species (green) is genetically more diverse than Latin American species (orange). Latin American palms are highly inbred, which translates to a high degree of genetic redundancy. Consequently, it is unneccessary to maintain the full collection of Latin American palms (N=150).
 
