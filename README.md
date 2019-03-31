@@ -11,7 +11,7 @@ The oil palm genome consists of 1.8 billion copies of four base molecules (A,T,G
 This PCA looks for clusters of oil palm samples that share a high degree of genetic similarities by projecting the high-dimensional genome-wide variant data into two dimensions that explain the variation (PC1 and PC2, accounting for 76% of genetic variation). The PCA reveals clusters of oil palm samples corresponding to African and Latin American species of oil palm as well as geographic origin of 653 oil palm samples across 70,100 genomic variants. 
 
 **Scripts**:
-[PCA.R](Oil-Palm-Genetic-Diversity-and-Conservation-Program/Principle_Components_Analysis/PCA.R) & [PCA_transformData.py](Oil-Palm-Genetic-Diversity-and-Conservation-Program/Principle_Components_Analysis/PCA_transformData.py)
+[PCA.R](Principle_Components_Analysis/PCA.R) & [PCA_transformData.py](Principle_Components_Analysis/PCA_transformData.py)
 
 <img src="Figures_Scripts/PCA.png" width="600" height="500">
 
@@ -19,7 +19,7 @@ This PCA looks for clusters of oil palm samples that share a high degree of gene
 ### Simulation Method: Simple random sampling to identify minimal sample size to capture 90% of total genetic variation
 Conservation of wild genetic material is important to ensure long-term availability for future exploitation but maintaining genetic resources of wild oil palm samples are costly and requires large land resources. Simulations were carried out to define an optimal sample size to reduce genetic redundancy while maximizing genetic diversity of wild oil palm conservation collections. 
 
-**Scripts**: [simulation.py](Oil-Palm-Genetic-Diversity-and-Conservation-Program/Simulations/simulation.py) & [Fitting_regression_curve.R](Oil-Palm-Genetic-Diversity-and-Conservation-Program/Simulations/Fitting_regression_curve.R)
+**Scripts**: [simulation.py](Simulations/simulation.py) & [Fitting_regression_curve.R](Simulations/Fitting_regression_curve.R)
   
   - Population genetic diversity estimates indicate that African oil palm species (green) is genetically more diverse than Latin American species (orange). Latin American palms are highly inbred, which translates to a high degree of genetic redundancy. Consequently, it is unneccessary to maintain the full collection of Latin American palms (N=150).
 
