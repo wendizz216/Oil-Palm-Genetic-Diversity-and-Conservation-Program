@@ -8,7 +8,7 @@ The oil palm genome consists of 1.8 billion copies of four base molecules (A,T,G
 <img src="Figures_Scripts/genetic_variants.png" width="500" height="300">
 
 ### Principle Components Analysis
-This PCA looks for clusters of oil palm samples that share a high degree of genetic similarities by projecting the high-dimensional genome-wide variant data into two dimensions that explain the variation (PC1 and PC2, accounting for 76% of genetic variation). The PCA reveals clusters of oil palm samples corresponding to African and Latin American species of oil palm as well as geographic origin of 653 oil palm samples across 70,100 genomic variants. 
+This PCA looks for clusters of oil palm samples that share a high degree of genetic similarities by projecting the high-dimensional genome-wide variant data into two dimensions that explain the the most variation (PC1 and PC2, accounting for 76% of genetic variation). The PCA reveals clusters of oil palm samples corresponding to African and Latin American species of oil palm as well as geographic origin of 653 oil palm samples across 70,100 genomic variants. 
 
 **Scripts**:
 [PCA.R](Principle_Components_Analysis/PCA.R) & [PCA_transformData.py](Principle_Components_Analysis/PCA_transformData.py)
@@ -16,10 +16,17 @@ This PCA looks for clusters of oil palm samples that share a high degree of gene
 <img src="Figures_Scripts/PCA.png" width="600" height="500">
 
 ### Hierarchical clustering analysis & K-means clustering: 
+Hierarchical clustering was implemented to undersand the genetic grouping and how they relate to one other. 
 
-<img src="Figures_Scripts/Hierarchical_Clustering_dendrogram.png" width="600" height="300">
-                                                                                     
-                                                                                   
+**Script**: [HierarchicalClustering_KmeansClustering.R]("Hierarchical_Clustering.R")
+
+  - **Hierarchical Clustering**
+  
+<img src="Figures_Scripts/Hierarchical_Clustering_dendrogram.png" width="600" height="200">
+
+
+  - **K Means Clustering** 
+  
 <img src="Figures_Scripts/K_Means_Clustering.png" width="600" height="500">
 
 
