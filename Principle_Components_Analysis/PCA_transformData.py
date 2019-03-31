@@ -1,10 +1,10 @@
 # !/usr/bin/env python
 
-#Python code is for categoring snp/genotype as minor, major or het for each snp position for all genotypes
-#This will be used for Multiple regression where the allele frequency of each snp position will be the response
-#variable.
+#This script categorizes snp/genotype as minor, major or het for each snp position for all genotypes
+#This will be used for PCA and Multiple regression (e.g.the allele frequency of each snp position will be the response
+#variable)
 #Numerical indicator of genotypic state: 0 = homo minor allele genotype; 0.5 = het; 1=homo major allele genotype
-#maf > 0.01; no more than 5% missing genotype call rate for freq estimates
+#maf > 0.01; no more than 5% missing genotype call rate for freq estimates.
 
 
 import os
