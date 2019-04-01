@@ -20,12 +20,12 @@ Hierarchical clustering was implemented to undersand the genetic grouping and ho
 
 **Script**: [HierarchicalClustering_KmeansClustering.R]("Hierarchical_Clustering.R")
 
-  - **Hierarchical Clustering Analysis** established four distinct clusters/genetic groupings: i. African cultivated palms (green), ii. Hondura, Costa Rica, Panama, Colombia (HCPC, orange), iii. Brazil (purple), iv. Peru, Ecuador (PE, pink). As expected, these clusters reflect the geograpical distribution of the wild palms and the African cultivated group is more genetic distinct than the Latin American groups. However, the clustering analysis indicates that palms form HCPC are highly related and there is very little genetic differences across the four countries potentially due to either high gene flow across these population. We can, therefore, treat HCPC palms as one population for downstream analyses. The same is true for palms from Peru and Ecuador.
+  - **Agglomerative Hierarchical Clustering Analysis** established four distinct clusters/genetic groupings: i. African cultivated palms (green), ii. Hondura, Costa Rica, Panama, Colombia (HCPC, orange), iii. Brazil (purple), iv. Peru, Ecuador (PE, pink). As expected, these clusters reflect the geograpical distribution of the wild palms and the African cultivated species group is more genetic distinct than the Latin American species groups. Further, the clustering analysis indicates that palms form HCPC are highly related and there is very little genetic differences across the four countries potentially due to either high gene flow. We can, therefore, treat HCPC palms as one population for downstream analyses. The same is true for palms from Peru and Ecuador.
   
 <img src="Figures_Scripts/Hierarchical_Clustering_dendrogram.png" width="600" height="200">
 
 
-  - **K Means Clustering Analysis** with K = 4 clusters incorrectly grouped one palm from Ecuador and some of the HCPC palms with the Brazilian palms. However, with K = 5 clusters, 
+  - **K Means Clustering Analysis** with K = 4 clusters incorrectly classified the genetic groupings. It grouped one palm from Ecuador and some of the HCPC palms with the Brazilian palms. 
   
 <img src="Figures_Scripts/K_Means_Clustering.png" width="400" height="300">
 
